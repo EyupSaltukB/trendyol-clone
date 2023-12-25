@@ -1,0 +1,26 @@
+@import 'variables';
+
+// . ve # de kullanılabilir
+// ancak daha sonra css'de . ve # kullanırsam
+// karışır. karışmaması için % yazıyoruz
+%heading{
+    font-family: $main-font;
+    color: $text-color;
+}
+
+%tags{
+    border: 1px solid gray;
+    border-radius: 45px;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.768);
+    padding: 3px;
+    &:hover{
+        color: $brands-hover;
+        border: 1px solid $brands-hover;
+    }
+}
+
+%central{
+    display: flex;
+    justify-content: center;
+}
